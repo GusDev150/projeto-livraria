@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(126, 58, 58);
+    font-family:"Cause" ;
+    padding: 10px;
+}
+
+nav{
+    text-align: right;
+    
+}
+
+@media screen and (min-width: 576px) {
+    body, main  {
+    background-image:url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+}
+}

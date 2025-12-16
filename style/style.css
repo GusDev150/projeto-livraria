@@ -16,11 +16,15 @@ nav{
     
 }
 
-@media screen and (min-width: 576px) {
-    body, main  {
-    background-image:url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg) ;
+
+body, main  {
+    background-image:url(../Img/Biblioteca\ Phone.png) ;
     background-size: cover;
-    background-position: center center;
     width: 100vw;
 }
+
+@media screen and (min-width: 1080px) and (max-width: 1400px){
+    body, main {
+        background-image: url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg);
+    }
 }

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media print {
+    body::after {
+        content: 'Criado por Gustavo Silva Santos e Fernando Rocha';
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+    body, main {
+        background-image: url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg);
+        height: calc(100vh - 120.46px);
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px){
+    body, main {
+        background-image: url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg);
+        height: calc(100vh - 120.46px);
+    }
+}
+

@@ -1,24 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+:root {
+    --h1: "Charm", cursive; /* Fonte do Título */
+    
+    /* Site Colors */
+    --Marrom: #4A2C2A; /* Logo */
+    --Bege: #F2E8D5; /* Fundo */
+    --Verde-Musgo: #4F6F52; /* Detalhes */
+    --Dourado-Suave: #C9A24D; /* Logo */
+    --Cinza-Grafite: #2E2E2E; /* Textos */
+}
 
 *{
     padding: 0px;
     margin: 0px;
 }
 
+html {
+    height: 100vh;
+}
+
+main {
+    background-image:url(../Img/Phone-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(100vh - 120.46px);
+    width: 100%;
+}
+
 header{
-    background-color: rgb(126, 58, 58);
-    font-family:"Cause" ;
+    background-color: var(--Marrom);
     padding: 10px;
 }
 
-nav{
-    text-align: right;
-    
+header > h1 {
+    text-align: center;
+    font-family: var(--h1);
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: bolder;
 }
 
+nav#container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
-body, main  {
-    background-image:url(../Img/Biblioteca\ Phone.png) ;
-    background-size: cover;
-    width: 100vw;
+nav#container > a.routes {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: var(--Marrom);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px 0px black;
+    gap: 10px;
+    border: 1px solid var(--Marrom);
+    background-color: var(--Bege);
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    transition: all 0.3s;
+
+    flex: auto;
+}
+
+nav#container > a.routes:hover {
+    background-color: #5c3936;
+    color: white;
 }

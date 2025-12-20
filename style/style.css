@@ -22,9 +22,3 @@ body, main  {
     background-size: cover;
     width: 100vw;
 }
-
-@media screen and (min-width: 1080px) and (max-width: 1400px){
-    body, main {
-        background-image: url(../Img/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia.jpg);
-    }
-}

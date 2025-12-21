@@ -64,12 +64,13 @@ nav#container > a.routes {
     text-decoration: none;
     text-align: center;
 
-    transition: all 0.3s;
+    transition: color 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
 
     flex: auto;
 }
 
 nav#container > a.routes:hover {
-    background-color: #5c3936;
-    color: white;
+    background: #807a71;
+    color: #35201e;
+    transform: scale(1.1);
 }

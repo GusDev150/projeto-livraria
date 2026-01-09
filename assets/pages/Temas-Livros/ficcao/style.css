@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+:root {
+    --h1: "Charm", cursive; /* Fonte do Título */
+    
+    /* Site Colors */
+    --Marrom: #4A2C2A; /* Logo */
+    --Bege: #F2E8D5; /* Fundo */
+    --Verde-Musgo: #4F6F52; /* Detalhes */  
+    --Dourado-Suave: #C9A24D; /* Logo */
+    --Cinza-Grafite: #2E2E2E; /* Textos */
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    
+    background-color: var(--Marrom);
+    padding: 10px;
+    height: 120px;
+    padding-top: 20px;
+
+    position: relative;
+}
+
+header > h1 {
+    text-align: left;
+    font-family: var(--h1);
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding-left: 70px;
+    padding-bottom: 15px;
+}
+
+header > img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 350px;
+    border-radius: 50%;
+}
+
+nav#container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+nav#container > a.routes {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: var(--Marrom);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px 0px black;
+    gap: 10px;
+    border: 1px solid var(--Marrom);
+    background-color: var(--Bege);
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    transition: color 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
+
+    flex: auto;
+}
+
+nav#container > a.routes:hover {
+    background: #807a71;
+    color: #35201e;
+    transform: scale(1.1);
+}
+
+body {
+    background-color: #3a365f ; 
+}

@@ -98,12 +98,10 @@ section.container > div.tema {
     box-shadow: 0px 0px 2px black;
 }
 
-/*
 section.container > div.tema:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
-*/
 
 section.container > div.tema h2 {
     font-size: 1.5em;

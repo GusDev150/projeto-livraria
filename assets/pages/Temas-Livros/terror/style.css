@@ -8,7 +8,7 @@
     --Bege: #F2E8D5; /* Fundo */
     --Verde-Musgo: #4F6F52; /* Detalhes */  
     --Dourado-Suave: #C9A24D; /* Logo */
-    --Cinza-Grafite: #2e2e2e; /* Textos */
+    --Cinza-Grafite: #2E2E2E; /* Textos */
 }
 
 *{
@@ -44,13 +44,13 @@ header > img {
     border-radius: 50%;
 }
 
-nav#container {
+.nav-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-nav#container > a.routes {
+.nav-container > .routes {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
@@ -70,12 +70,12 @@ nav#container > a.routes {
     flex: auto;
 }
 
-nav#container > a.routes:hover {
+.nav-container > .routes:hover {
     background: #807a71;
     color: #35201e;
     transform: scale(1.1);
 }
 
 body {
-    background-color: #000000; 
+    background-color: #ffefd2; 
 }

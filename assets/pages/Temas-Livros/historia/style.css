@@ -44,13 +44,13 @@ header > img {
     border-radius: 50%;
 }
 
-nav#container {
+.nav-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-nav#container > a.routes {
+.nav-container > .routes {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
@@ -70,12 +70,12 @@ nav#container > a.routes {
     flex: auto;
 }
 
-nav#container > a.routes:hover {
+.nav-container > .routes:hover {
     background: #807a71;
     color: #35201e;
     transform: scale(1.1);
 }
 
 body {
-    background-color: #c28e4a;
+    background-color: #ffefd2; 
 }

@@ -18,17 +18,10 @@
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
-main {
-    background-image:url(../Img/Background/Phone-background.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-}
+/* Header */
 
 header{
     background-color: var(--Marrom);
@@ -61,14 +54,13 @@ header > h1 {
 
     background-color: var(--Bege);
     padding: 8px;
+    opacity: 0.6;
     
     border: 1px solid var(--Marrom);
     border-radius: 10px;
 
     text-decoration: none;
     text-align: center;
-
-    transition: background-color 0.2 ease, color 0.3s ease, transform 0.2 ease;
 
     flex: auto;
 }
@@ -88,9 +80,23 @@ header > h1 {
 }
 
 .nav-container ul li .routes:hover {
-    background-color: #807a71;
+    background-color: #d8ccbb;
+    opacity: 1;
     color: #35201e;
     transform: scale(1.1);
+    transition: transform 0.4s ease, backgrund 0.2s ease, color 0.3s ease;
+}
+
+/* Main */
+
+main {
+    background-image:url(../Img/Background/Phone-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
 }
 
 main > .section-container {
@@ -99,27 +105,29 @@ main > .section-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px;
-    justify-content: space-between;
+    padding: 5px;
+    justify-content: space-evenly;
 }
 
 .section-container > .tema {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     margin: 10px;
     flex: auto;
-    max-width: 180px;
-    aspect-ratio: 3 / 4;
+    max-width: 200px;
+    height: 14.4rem;
     background-color: gray; 
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 0px 2px black;
+    opacity: 0.95;
 }
 
 .section-container > .tema:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    opacity: 1;
 }
 
 .section-container > .tema h2 {
@@ -136,17 +144,19 @@ main > .section-container {
     border-radius: 10px;
 }
 
+/* Footer */
+
 .site-footer {
     background-color: var(--Cinza-Grafite);
     color: var(--Bege);
-    padding: 20px 10px;
+    padding: 10px 15px 10px 15px;
 }
 
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-section h3, .footer-section h4 {
@@ -158,10 +168,6 @@ main > .section-container {
     height: 230px;
 }
 
-.footer-section a:hover {
-    
-}
-
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -170,6 +176,10 @@ main > .section-container {
 .footer-section a {
     color: var(--Bege);
     text-decoration: none;
+}
+
+.footer-bottom a:hover, .footer-section a:hover {
+    text-decoration: underline;
 }
 
 .footer-bottom {

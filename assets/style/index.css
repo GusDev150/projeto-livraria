@@ -147,13 +147,13 @@ main > .section-container {
 .site-footer {
     background-color: var(--Cinza-Grafite);
     color: var(--Bege);
-    padding: 10px 15px 10px 15px;
+    padding: 10px 5px;
 }
 
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-around;
 }
 

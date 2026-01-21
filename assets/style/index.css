@@ -40,13 +40,12 @@ header > h1 {
     flex-direction: row;
     gap: 10px;
     width: 100%;
-}
-
-.nav-container .routes {
-    display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.nav-container .routes {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     color: var(--Marrom);
@@ -61,7 +60,7 @@ header > h1 {
     text-decoration: none;
     text-align: center;
 
-    flex: auto;
+    flex: 1 1 100px;
 }
 
 .nav-container .routes:hover {

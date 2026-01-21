@@ -14,71 +14,93 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ffefd2; 
 }
 
 header{
-    display: flex;
-    align-content: space-between;
-    flex-flow: row wrap;
-    
     background-color: var(--Marrom);
     padding: 10px;
-    height: 120px;
-    padding-top: 20px;
 
     position: relative;
 }
 
 header > h1 {
-    text-align: left;
+    text-align: center;
     font-family: var(--h1);
     padding-bottom: 5px;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bolder;
-    padding-left: 70px;
-    padding-bottom: 15px;
 }
 
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.title-container h1 {
+    font-family: var(--h1);
+    font-size: 2em;
+    color: var(--Bege);
+}
+
+.title-container .logo {
+    width: 75px;
+    height: 75px;
+}
+
+
 header > img {
+    height: 75px;
+    width: 75px;
+
     position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 350px;
-    border-radius: 50%;
+    left: 390px;
 }
 
 .nav-container {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-flow: row nowrap;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .nav-container > .routes {
-    display: block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--Marrom);
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 1px 0px black;
-    gap: 10px;
-    border: 1px solid var(--Marrom);
+
     background-color: var(--Bege);
     padding: 5px;
+    opacity: 0.6;
+    
+    border: 1px solid var(--Marrom);
+    border-radius: 10px;
+
     text-decoration: none;
     text-align: center;
 
-    transition: color 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
-
-    flex: 1 1 100px;
+    flex: 0 1 80px;
 }
 
-.nav-container > .routes:hover {
-    background: #807a71;
+.nav-container .routes:hover {
+    background-color: #d8ccbb;
+    opacity: 1;
     color: #35201e;
     transform: scale(1.1);
+    transition: transform 0.4s ease, backgrund 0.2s ease, color 0.3s ease;
 }
 
-body {
-    background-color: #ffefd2; 
+@media (max-width: 768px) {
+    .nav-container .routes:hover {
+        transform: none;
+    }
 }

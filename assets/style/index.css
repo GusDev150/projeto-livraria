@@ -174,3 +174,9 @@ main > .section-container {
     margin-top: 15px;
     font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+    .nav-container .routes:hover {
+        transform: none;
+    }
+}

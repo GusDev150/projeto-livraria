@@ -6,12 +6,6 @@
     }
 }
 
-@media (min-width: 768px) {
-    body, main {
-        background-image: url(../Img/Background/Telas-Grandes.jpg);
-    }
-}
-
 @media (max-width: 480px) {
     .title-container .logo {
         width: 26px;
@@ -29,4 +23,3 @@
         transform: none;
     }
 }
-

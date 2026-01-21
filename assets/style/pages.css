@@ -28,14 +28,6 @@ header{
     position: relative;
 }
 
-header > h1 {
-    text-align: center;
-    font-family: var(--h1);
-    padding-bottom: 5px;
-    font-size: 2em;
-    font-weight: bolder;
-}
-
 .title-container {
     display: flex;
     align-items: center;
@@ -52,15 +44,6 @@ header > h1 {
 .title-container .logo {
     width: 75px;
     height: 75px;
-}
-
-
-header > img {
-    height: 75px;
-    width: 75px;
-
-    position: absolute;
-    left: 390px;
 }
 
 .nav-container {
@@ -88,7 +71,7 @@ header > img {
     text-decoration: none;
     text-align: center;
 
-    flex: 0 1 80px;
+    flex: 1 1 80px;
 }
 
 .nav-container .routes:hover {
@@ -99,8 +82,102 @@ header > img {
     transition: transform 0.4s ease, backgrund 0.2s ease, color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .nav-container .routes:hover {
-        transform: none;
-    }
+main {
+    background-image:url(../Img/Background/Phone-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+}
+
+main > .section-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.section-container > .tema {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: auto;
+
+    margin: 10px;
+    max-width: 180px;
+    height: 14.4rem;
+    
+    background-color: gray; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    
+    opacity: 0.95;
+}
+
+.section-container > .tema:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    opacity: 1;
+}
+
+.section-container > .tema h2 {
+    font-size: 1.5em;
+    color: var(--Marrom);
+}
+
+.section-container > .tema > a > img {
+    flex: auto;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.site-footer {
+    background-color: var(--Cinza-Grafite);
+    color: var(--Bege);
+    padding: 10px 15px 10px 15px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 8px;
+}
+
+.footer-section img {
+    width: 230px;
+    height: 230px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: var(--Bege);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover, .footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
 }

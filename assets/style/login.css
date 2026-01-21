@@ -71,10 +71,10 @@ section#login {
 
 section#login > div.img {
     display: block;
-    background-image: url(../../../Img/Background/Biblioteca\ Phone.png);
+    background-image: url(../img/background/Biblioteca\ Phone.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 175px;
     background-position: center left;
 }
 
@@ -170,6 +170,20 @@ form > a.botao > span {
     font-size: 0.8em;
 }
 
+p.cadastro {
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+p.cadastro > a {
+    text-decoration: none;
+}
+
+
+p.cadastro > a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
     body {
         background-image: linear-gradient(to top, #2E2E2E, #4A2C2A);
@@ -189,6 +203,20 @@ form > a.botao > span {
     section#login > div.formulario {
         float: right;
         width: 70%;
+    }
+
+    form > input[type=submit] {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    form > a.botao {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    p.cadastro {
+        padding-left: 130px;
     }
 }
 
@@ -220,5 +248,10 @@ form > a.botao > span {
     div.formulario > p {
         font-size: 1em;
         margin: 20px 0px;
+    }
+
+    p.cadastro {
+        padding-top: 5px;
+        padding-left: 150px;
     }
 }

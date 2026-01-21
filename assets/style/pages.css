@@ -17,6 +17,9 @@
 }
 
 header{
+    display: flex;
+    align-content: space-between;
+    flex-flow: row wrap;
     
     background-color: var(--Marrom);
     padding: 10px;
@@ -67,7 +70,7 @@ header > img {
 
     transition: color 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
 
-    flex: auto;
+    flex: 1 1 100px;
 }
 
 .nav-container > .routes:hover {

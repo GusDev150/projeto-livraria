@@ -8,7 +8,8 @@
 
 @media (max-width: 480px) {
     .title-container .logo {
-        width: 26px;
+        width: 75px;
+        height: 75px;
     }
 
     .title-container h1 {

@@ -42,7 +42,7 @@ header > h1 {
     width: 100%;
 }
 
-.nav-container ul li .routes {
+.nav-container .routes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,21 +64,7 @@ header > h1 {
     flex: auto;
 }
 
-.nav-container ul {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-container ul li {
-    flex: 1;
-}
-
-.nav-container ul li .routes:hover {
+.nav-container .routes:hover {
     background-color: #d8ccbb;
     opacity: 1;
     color: #35201e;

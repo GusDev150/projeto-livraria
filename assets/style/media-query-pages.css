@@ -6,7 +6,22 @@
     }
 }
 
+@media (min-width: 768px) {
+    body, main {
+        background-image: url(../Img/Background/Telas-Grandes.jpg);
+    }
+}
+
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        background-attachment: scroll;
+        min-height: 100svh;
+    }
+
     .title-container .logo {
         width: 75px;
         height: 75px;

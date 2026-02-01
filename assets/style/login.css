@@ -71,7 +71,7 @@ section#login {
 
 section#login > div.img {
     display: block;
-    background-image: url(../Img/background/Biblioteca\ Phone.png);
+    background-image: url(../Img/Background/Biblioteca\ Phone.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 175px;

@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="assets/style/index.css">
     <link rel="stylesheet" href="assets/style/media-query.css">
     <link rel="shortcut icon" href="assets/Img/Logo/favicon-16x16.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/299e83dd29.js" crossorigin="anonymous"></script>
 </head>
 <body id="topo">
     <header>
-        <div class="title-container">
+        <div class="header-container">
             <h1>Páginas Quebradas</h1>
             <img src="assets/Img/Logo/Favicon.png" alt="logo" class="logo">
         </div>
         <nav class="nav-container">
-            <a href="index.html" class="routes">Home</a>
-            <a href="assets/pages/client/pedidos.html" class="routes">Pedidos</a>
-            <a href="assets/pages/client/carrinho.html" class="routes">Carrinho</a>
-            <a href="assets/pages/client/login.html" class="routes">Login</a>
-            <a href="assets/pages/client/cadastro.html" class="routes">Cadastrar</a>
+            <a href="index.html" class="routes"><i class="fa-solid fa-house"></i></a>
+            <a href="assets/pages/client/carrinho.html" class="routes"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="assets/pages/client/login.html" class="routes"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="assets/pages/client/cadastro.html" class="routes"><i class="fa-solid fa-address-card"></i></a>
         </nav>
     </header>
+
+    <div class="navbar">
+    <form class="search-bar">
+        <input 
+            type="search" 
+            id="pesquisa" 
+            placeholder="Buscar gênero..."
+        >
+
+        <button type="button" class="filter-button">
+            <i class="fa-solid fa-sliders"></i>
+        </button>
+    </form>
+    </div>
+
     <main>
         <section class="section-container">
             <div class="tema">
@@ -122,7 +137,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>© 2026 Página  Quebrada - Projeto educacional</p>
+            <p><i class="fa-regular fa-copyright"></i> 2026 Página  Quebrada - Projeto educacional</p>
         </div>
     </footer>
 </body>

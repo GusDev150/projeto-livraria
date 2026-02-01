@@ -7,21 +7,36 @@
     <link rel="shortcut icon" href="../../Img/Logo/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../../style/pages.css">
     <link rel="stylesheet" href="../../style/media-query-pages.css">
+    <script src="https://kit.fontawesome.com/299e83dd29.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-         <div class="title-container">
-             <h1>Páginas Quebradas</h1>
-                     <img src="../../Img/Logo/Favicon.png" alt="logo" class="logo">
-         </div>
+        <div class="header-container">
+            <h1>Páginas Quebradas</h1>
+            <img src="../../Img/Logo/Favicon.png" alt="logo" class="logo">
+        </div>
         <nav class="nav-container">
-            <a href="../../../index.html" class="routes">Home</a>
-            <a href="../client/pedidos.html" class="routes">Pedidos</a>
-            <a href="../../client/carrinho.html" class="routes">Carrinho</a>
-            <a href="../../client/login.html" class="routes">Login</a>
-            <a href="../client/cadastro.html" class="routes">Cadastrar</a>
+            <a href="../../../index.html" class="routes"><i class="fa-solid fa-house"></i></a>
+            <a href="../client/carrinho.html" class="routes"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../../pages/client/login.html" class="routes"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="../../pages/client/cadastro.html" class="routes"><i class="fa-solid fa-address-card"></i></a>
         </nav>
     </header>
+
+    <div class="navbar">
+    <form class="search-bar">
+        <input 
+            type="search" 
+            id="pesquisa" 
+            placeholder="Buscar livros..."
+        >
+
+        <button type="button" class="filter-button">
+            <i class="fa-solid fa-sliders"></i>
+        </button>
+    </form>
+    </div>
+
     <main>
 
     </main>

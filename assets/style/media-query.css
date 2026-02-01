@@ -12,29 +12,32 @@
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    main {
-        min-height: 100svh;
-    }
-
+/* TELAS MAIORES */
+@media (min-width: 481px) {
     .title-container .logo {
-        width: 75px;
-        height: 75px;
+        width: 120px;
+        height: 120px;
     }
 
     .title-container h1 {
-        font-size: 1.6em;
+        font-size: 2.5em;
     }
 
     .nav-container .routes {
-        flex-grow: 0;
+        flex-grow: 1;
     }
-    
+
     .nav-container .routes:hover {
-        transform: none;
+        transform: scale(1.05);
     }
+}
+
+/* TELAS GRANDES */
+@media (min-width: 768px) {
+
+}
+
+/* TELAS ENORMES */ 
+@media (min-width: 992px) {
+    
 }

@@ -42,6 +42,7 @@ header{
     font-family: var(--h1);
     font-size: 2em;
     color: var(--Bege);
+    font-weight: bold;
 }
 
 .title-container .logo {
@@ -52,7 +53,7 @@ header{
 .nav-container {
     display: flex;
     flex-flow: row nowrap;
-    gap: 8px;
+    gap: 5px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -74,14 +75,14 @@ header{
     text-decoration: none;
     text-align: center;
 
-    flex: 1 1 80px;
+    flex: 1  1 100px;
 }
 
 .nav-container .routes:hover {
     background-color: #d8ccbb;
     opacity: 1;
     color: #35201e;
-    transform: scale(1.1);
+    transform: scale(1.0.5);
     transition: transform 0.4s ease, backgrund 0.2s ease, color 0.3s ease;
 }
 
@@ -120,7 +121,7 @@ main > .section-container {
     border-radius: 10px;
     box-shadow: 0px 0px 2px black;
     
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .section-container > .tema:hover {
